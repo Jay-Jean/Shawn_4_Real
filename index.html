@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -38,3 +39,29 @@
 <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <title>软妹语生成器</title>
+  <script type="text/javascript">
+    function f() {
+      var str = document.getElementById("input").value;
+      var tmp = "";
+      for (var i = 0; i < str.length; ++i) {
+        tmp = tmp + str[i] + "子";
+      }
+      document.getElementById("after").innerHTML = tmp;
+    }
+  </script>
+</head>
+<body>
+  <h1>软妹语生成器</h1>
+  <p><strong>请输入要转化的文本</strong></p>
+  <input id="input" type="text" name="words"><br>
+  <input type="submit" name="twords" value="转化" onclick="f()">
+  <p id="after"></p>
+</body>
+</html>
+
+>>>>>>> e7687cb8746f7992dfc9648f1a35e2a90c4feff1
