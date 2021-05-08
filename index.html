@@ -1,1 +1,24 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>软妹语生成器</title>
+  <script type="text/javascript">
+    function f() {
+      var str = document.getElementById("input").value;
+      var tmp = "";
+      for (var i = 0; i < str.length; ++i) {
+        tmp = tmp + str[i] + "子";
+      }
+      document.getElementById("after").innerHTML = tmp;
+    }
+  </script>
+</head>
+<body>
+  <h1>软妹语生成器</h1>
+  <p><strong>请输入要转化的文本</strong></p>
+  <input id="input" type="text" name="words"><br>
+  <input type="submit" name="twords" value="转化" onclick="f()">
+  <p id="after"></p>
+</body>
+</html>
+
